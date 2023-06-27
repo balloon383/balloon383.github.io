@@ -1,0 +1,90 @@
+.main {
+
+    &__flex--container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__header{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__comment{
+        font-size: 18px;
+        margin-bottom: 25px;
+
+    }
+
+    &__login--container {
+        flex: 1 1 50%;
+        padding: 25px;
+    }
+
+    &__login--form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input{
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid rgba(128, 128, 128, 0.815);
+    }
+
+    &__register--container {
+        flex: 1 1 50%;
+        padding: 25px;
+        border-left: 1px solid rgba(107, 107, 107, 0.438);
+    }
+
+    &__register--form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__button {
+        color: #fff;
+        background-color: #d30000c9;
+        padding: 12px 18px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    &__error{
+        color: rgba(255, 0, 0, 0.644);
+        background: rgba(255, 0, 0, 0.274);
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+    &__error--password{
+        display: none;
+        &-display{
+            display: block;
+        }
+        &-register {
+            display: none;
+            &-display {
+                    display: block;
+                }
+        }
+    }
+    &__error--email{
+        display: none;
+        &-display {
+                display: block;
+            }
+        &-register{
+            display: none;
+            &-display {
+                    display: block;
+                }
+        }
+    }
+    &__error--exist-register{
+            display: none;
+            &-display {
+                    display: block;
+                }
+    }
+}

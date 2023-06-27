@@ -1,0 +1,282 @@
+@import 'login.css';
+@import 'shopping-cart.css';
+@import 'account.css';
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(236, 236, 236, 0.6549019608);
+}
+
+.header__logo {
+  padding: 10px;
+}
+
+a {
+  color: white;
+}
+
+.content__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgba(26, 156, 0, 0.7333333333);
+  margin-bottom: 50px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav--ul {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  color: white;
+}
+.header__nav--li {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  position: relative;
+}
+.header__nav--li:nth-child(1) {
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+.header__shoppingcart--link {
+  position: relative;
+}
+.header__shoppingcart--counter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  transform: translate(7px, -4px);
+  color: rgba(26, 156, 0, 0.7333333333);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.header__logout {
+  display: none;
+}
+.header__logout-logged {
+  display: block;
+}
+
+.main__category {
+  margin-bottom: 40px;
+}
+.main__category--name {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 26px;
+}
+.main__category--content {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+.main__category--card {
+  padding: 15px;
+  font-size: 18px;
+  max-width: 200px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 5px 6px 10px -3px rgba(0, 0, 0, 0.12);
+}
+.main__category--card-header {
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.main__category--card-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__category--card-li {
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+}
+.main__category--card-li-button {
+  padding: 3px 14px 2px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: red;
+}
+.main__category--card-li-button-in {
+  background-color: rgb(0, 178, 0);
+}
+.main__category--card-li-sale {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: gray;
+  transform: translate(0, -25px);
+}
+.main__category--card-li-sale::before {
+  content: "";
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  transform: translate(0px, 6px);
+}
+.main__category--card-li-salePercent {
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: rgb(0, 178, 0);
+  transform: translate(43px, -29px);
+}/*# sourceMappingURL=style.css.map */

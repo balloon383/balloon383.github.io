@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <section class="content__container header__container">
+            <a href="../../index.html"><img src="../../img/logo.png" alt="header logo" class="header__logo" width="35px" height="35px"></a>
+            <nav class="header__nav">
+                <ul class="header__nav--ul">
+                    <li class="header__nav--li">Hi, <a href="./index.html" class="header__nav--user">Log in</a></li>
+                    <li class="header__nav--li"><a href="#"><img class="header__shoppingcart" src="../../img/shopping-cart.png" alt="shopping cart" width="35px" height="35px"><span class="header__shoppingcart--counter">0</span></a><a href="#" class="header__logout">Log out</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="main">
+        <section class="content__container main__flex--container">
+            <section class="main__login--container">
+                <h2 class="main__login--header main__header">
+                    Secure Sign In
+                </h2>
+                <h3 class="main__login--comment main__comment">
+                    For current customers
+                </h3>
+                <p class="main__error main__error--password">Invalid password.</p>
+                <p class="main__error main__error--email">Invalid login.</p>
+                <form action="GET" class="main__login--form">
+                    <input class="main__input main__login--email" type="email" name="email" placeholder="Email Address">
+                    <input class="main__input main__login--password" type="password" name="password" placeholder="Password">
+                </form>
+                <button class="main__button main__login--button">Sign in</button>
+            </section>
+            <section class="main__register--container">
+                <h2 class="main__register--header main__header">
+                    Quick Registration
+                </h2>
+                <h3 class="main__register--comment main__comment">
+                    For new customers
+                </h3>
+                <p class="main__error main__error--password-register">Passwords not matches, or shorter than 5 symbols</p>
+                <p class="main__error main__error--email-register">Invalid login, example: login@email.com</p>
+                <p class="main__error main__error--exist-register">User already exsist</p>
+                <form class="main__register--form" action="PUT">
+                    <input class="main__input main__register--name" type="text" class="Full name" placeholder="Full name">
+                    <input class="main__input main__register--email" type="email" name="email" placeholder="Email Address">
+                    <input class="main__input main__register--password" type="password" name="password" placeholder="Password">
+                    <input class="main__input main__register--password-verify" type="password" name="password" placeholder="Verify Password">
+                </form>
+                <button class="main__button main__register--button">Create Account</button>
+            </section>
+        </section>
+    </main>
+    <script src="../../js/login.js" type="module"></script>
+</body>
+</html>

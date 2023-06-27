@@ -1,0 +1,99 @@
+.main {
+
+    // .main__shoppingcart--flex
+
+    &__shoppingcart--flex {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+
+    // .main__shoppingcart
+
+    &__shoppingcart {
+        flex: 1 1 70%;
+    }
+
+    // .main__shoppingcart--header
+
+    &__shoppingcart--header {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    &__shoppingcart--sale-number{
+        font-weight: 700;
+        font-size: 16px;
+        color: white;
+        padding: 3px;
+        border-radius: 4px;
+        background-color: rgb(0, 178, 0);
+        max-width: 45px;
+        margin: 0 auto;
+    }
+        &__shoppingcart--quantity {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid rgb(99, 99, 99);
+            max-width: 150px;
+        }
+    // .main__shoppingcart--table
+
+    &__shoppingcart--table {
+        text-align: center;
+    }
+    &__shoppingcart--tr-header {
+            font-weight: 700;
+            background-color: #c7c7c7;
+            & td{
+                min-width: 60px;
+                padding: 10px;
+                position: relative;
+            }
+        }
+
+    // .main__shoppingcart--tbody
+    &__shoppingcart--img{
+        position: absolute;
+        transform: translate(-150px, -70px);
+    }
+    &__shoppingcart--img-box{
+        padding: 70px;    
+        padding-left: 150px;
+
+    }
+
+    // .main__order
+
+    &__order {
+        flex: 1 1 30%;
+    }
+
+    // .main__order--header
+
+    &__order--header {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    // .main__order--ul
+
+    &__order--ul {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+
+    &__order--complete {
+        border-radius: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #ff2424;
+        font-weight: 700;
+        color: #fff;        
+    }
+    
+}
